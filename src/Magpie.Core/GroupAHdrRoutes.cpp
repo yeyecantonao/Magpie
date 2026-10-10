@@ -29,25 +29,6 @@ HdrFormatRoute MakeSdrFallback(
     };
 }
 
-HdrFormatRoute MakeCasFp16() {
-    return HdrFormatRoute{
-        .effectId = "CAS",
-        .optionId = "fp16-conditional",
-        .inputFormat = DXGI_FORMAT_R16G16B16A16_FLOAT,
-        .outputFormat = DXGI_FORMAT_R16G16B16A16_FLOAT,
-        .inputTransfer = HdrTransferFunction::Linear,
-        .outputTransfer = HdrTransferFunction::Linear,
-        .inputRange = HdrColorRange::SceneLinear,
-        .outputRange = HdrColorRange::SceneLinear,
-        .alphaMode = HdrAlphaMode::ForceOpaque,
-        .evidenceLevel = HdrEvidenceLevel::ReferenceImplementation,
-        .hdrNative = false,
-        .adapterProfile = HdrAdapterProfile::ConditionalFP16,
-        .defaultForHdr = true,
-        .defaultForSdr = false,
-    };
-}
-
 bool IsGroupA(std::string_view effect) noexcept {
     return effect == "Anime4K" || effect == "CAS" || effect == "CRT" ||
         effect == "CuNNy" || effect == "CuNNy2" || effect == "Diagnostics" ||
