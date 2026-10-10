@@ -40,6 +40,9 @@
     <ClInclude Include="GDIFrameSource.h">
       <Filter>Capture</Filter>
     </ClInclude>
+    <ClInclude Include="MpvFrameSource.h">
+      <Filter>Capture</Filter>
+    </ClInclude>
     <ClInclude Include="FrameTrace.h"><Filter>Render</Filter></ClInclude>
     <ClInclude Include="FrameSourceBase.h">
       <Filter>Capture</Filter>
@@ -229,6 +232,9 @@
       <Filter>Capture</Filter>
     </ClCompile>
     <ClCompile Include="GDIFrameSource.cpp">
+      <Filter>Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="MpvFrameSource.cpp">
       <Filter>Capture</Filter>
     </ClCompile>
     <ClCompile Include="FrameTrace.cpp"><Filter>Render</Filter></ClCompile>

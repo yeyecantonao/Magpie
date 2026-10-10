@@ -32,6 +32,7 @@ enum class CaptureMethod {
 	DesktopDuplication,
 	GDI,
 	DwmSharedSurface,
+	Player,
 	COUNT
 };
 

@@ -81,6 +81,7 @@
     <ClInclude Include="FrameTrace.h" />
     <ClInclude Include="GDIFrameSource.h" />
     <ClInclude Include="GraphicsCaptureFrameSource.h" />
+    <ClInclude Include="MpvFrameSource.h" />
     <ClInclude Include="ImGuiBackend.h" />
     <ClInclude Include="ImGuiFontsCacheManager.h" />
     <ClInclude Include="OverlayHelper.h" />
@@ -202,6 +203,7 @@
     <ClCompile Include="FrameTrace.cpp" />
     <ClCompile Include="GDIFrameSource.cpp" />
     <ClCompile Include="GraphicsCaptureFrameSource.cpp" />
+    <ClCompile Include="MpvFrameSource.cpp" />
     <ClCompile Include="ImGuiBackend.cpp" />
     <ClCompile Include="ImGuiFontsCacheManager.cpp" />
     <ClCompile Include="OverlayHelper.cpp" />

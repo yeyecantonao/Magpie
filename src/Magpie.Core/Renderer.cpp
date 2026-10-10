@@ -23,6 +23,7 @@
 #include "EffectsProfiler.h"
 #include "GDIFrameSource.h"
 #include "GraphicsCaptureFrameSource.h"
+#include "MpvFrameSource.h"
 #include "Logger.h"
 #include "OverlayDrawer.h"
 #include "Renderer.h"
@@ -1697,6 +1698,9 @@ bool Renderer::_InitFrameSource() noexcept {
 		break;
 	case CaptureMethod::DwmSharedSurface:
 		_frameSource = std::make_unique<DwmSharedSurfaceFrameSource>();
+		break;
+	case CaptureMethod::Player:
+		_frameSource = std::make_unique<MpvFrameSource>();
 		break;
 	default:
 		Logger::Get().Error("未知的捕获模式");
